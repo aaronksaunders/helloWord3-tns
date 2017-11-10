@@ -1,0 +1,14 @@
+<ActionBar title="Details" class="action-bar">
+    <NavigationButton text="Go Back"
+                      android.systemIcon="ic_menu_back"
+                      (tap)="onNavBtnTap()"></NavigationButton>
+</ActionBar>
+<FlexboxLayout flexDirection="column" class="page">
+    <FlexboxLayout class="m-15">
+        <Label class="h2" [text]="item.id + '. '"></Label>
+        <Label class="h2" [text]="item.name"></Label>
+    </FlexboxLayout>
+    <Label class="h4" [text]="item.role"></Label>
+    <Button (tap)="dialogBtnClicked()" text="show dialog" class="btn btn-primary btn-active"
+            id="button"></Button>
+</FlexboxLayout>
